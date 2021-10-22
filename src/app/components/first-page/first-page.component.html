@@ -1,0 +1,21 @@
+<div class="container">
+    <h1 class="text-center">Flickr API demonstration to display food images</h1>
+    <div class="form-group">
+      <!-- <input type="search" class="form-control" placeholder="Search images"> &nbsp;&nbsp; -->
+      <input type="button" class="form-control" (click)="search($event)" value="Get Food Images">
+      <!-- <button type="submit" class="form-control" (click)="search($event)" >Click To Get Food Images</button> -->
+    </div>
+  
+    <div class="row">
+      <div class="card-container column" *ngFor="let image of images">
+          <a class="card">
+            <img src="{{image.url}}_b.jpg" (click)="secondComponent()" >
+          </a>
+          <div class="detials">
+            <p>Title = {{image.title}}</p>
+            <p>"{{image.description}}"</p>
+          </div>
+      </div>
+    </div>
+    
+  </div>    

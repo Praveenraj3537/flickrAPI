@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+.photo-list-tile-view {
+    position: absolute;
+    background-color: #fcfeff;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid hsla(0,0%,54%,.3);
+    border-radius: 4px;
+}
+
